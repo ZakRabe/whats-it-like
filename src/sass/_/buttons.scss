@@ -1,0 +1,51 @@
+/*MIXINS*/
+
+@mixin stylish-corners(){
+  $round-radius: 16px;
+
+  border-bottom-left-radius: $round-radius;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: $round-radius;
+}
+
+@mixin location-button-styles($color){
+  $dark-color: darken($color, 10%);
+  @include stylish-corners;
+
+  color: rgba(#000, .9);
+  background-color: rgba($color, .5);
+  border: 2px solid $dark-color;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 8px;
+  outline: 0;
+
+
+ &:hover {
+  background-color: rgba($dark-color, .9);
+  color: lighten($color, 20%);
+  border-color: lighten($color, 20%);
+ }
+ &:focus {
+  border-color: darken($color, 30%);
+ }
+}
+
+/* RULES */
+#locations{
+  button{
+    width: calc(50% - 10px);
+  }
+}
+
+.btn-green{
+  @include location-button-styles($green);
+}
+.btn-purple{
+  @include location-button-styles($purple);
+}
+.btn-blue{
+  @include location-button-styles($blue);
+}
+

@@ -1,0 +1,68 @@
+/*MIXINS*/
+/* RULES */
+#locations button {
+  width: calc(50% - 10px); }
+
+.btn-green {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 16px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(53, 122, 91, 0.5);
+  border: 2px solid #265640;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 8px;
+  outline: 0; }
+  .btn-green:hover {
+    background-color: rgba(38, 86, 64, 0.9);
+    color: #5db88f;
+    border-color: #5db88f; }
+  .btn-green:focus {
+    border-color: #070f0b; }
+
+.btn-purple {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 16px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(81, 59, 86, 0.5);
+  border: 2px solid #352638;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 8px;
+  outline: 0; }
+  .btn-purple:hover {
+    background-color: rgba(53, 38, 56, 0.9);
+    color: #8a6592;
+    border-color: #8a6592; }
+  .btn-purple:focus {
+    border-color: black; }
+
+.btn-blue {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 16px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(52, 138, 167, 0.5);
+  border: 2px solid #286a80;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 8px;
+  outline: 0; }
+  .btn-blue:hover {
+    background-color: rgba(40, 106, 128, 0.9);
+    color: #6fb9d2;
+    border-color: #6fb9d2; }
+  .btn-blue:focus {
+    border-color: #102a32; }
+
+body {
+  background: url("../public/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
